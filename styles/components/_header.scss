@@ -1,0 +1,16 @@
+.header {
+  padding: $space-24 $space-28 $space-32;
+
+  &__title {
+    margin: $space-24 0 $space-16;
+    color: $bright-yellow;
+    font-weight: $font-weight-bold;
+    line-height: $line-hegiht-20;
+  }
+
+  &__text {
+    font-size: $font-size-14;
+    font-weight: $font-weight-medium;
+    line-height: $line-hegiht-26;
+  }
+}

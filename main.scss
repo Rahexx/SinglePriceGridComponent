@@ -1,2 +1,18 @@
-@use 'styles/base/reset';
-@use 'styles/utilities/variables';
+@import 'styles/base/reset';
+@import 'styles/utilities/variables';
+@import 'styles/components/header';
+
+.container {
+  background: $light-gray;
+  font-family: $font-primary;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 722px;
+  width: 311px;
+  margin: $space-72 auto;
+  background: $white;
+  border-radius: 5px;
+}
