@@ -1,0 +1,16 @@
+@mixin changePositionZ($position: relative, $zIndex: 1) {
+  position: $position;
+  z-index: $zIndex;
+}
+
+@mixin text-style($color, $font-size, $font-weight: null, $line-height: null) {
+  color: $color;
+  font-size: $font-size;
+
+  @if $font-weight {
+    font-weight: $font-weight;
+  }
+  @if $line-height {
+    line-height: $line-height;
+  }
+}

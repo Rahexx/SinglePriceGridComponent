@@ -1,0 +1,33 @@
+@import 'styles/base/reset';
+@import 'styles/utilities/variables';
+@import 'styles/utilities/mixins';
+@import 'styles/components/header';
+@import 'styles/components/content';
+
+.container {
+  background: $light-gray;
+  font-family: $font-primary;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 722px;
+  width: 311px;
+  margin: $space-72 auto;
+  background: $white;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+@media (min-width: $breakpoint-lg) {
+  .card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 475px;
+    width: 635px;
+    margin: 0;
+    transform: translate(-50%, -50%);
+  }
+}

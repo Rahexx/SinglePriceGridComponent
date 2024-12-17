@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  padding: 24px 24px 32px;
+}
+.header__title {
+  color: hsl(179, 62%, 43%);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.header__subtitle {
+  margin: 24px 0 16px;
+  color: hsl(71, 73%, 54%);
+  font-size: 1rem;
+  color: hsl(71, 73%, 54%);
+  font-size: 1rem;
+}
+.header__text {
+  color: hsl(218, 22%, 67%);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+@media (min-width: 992px) {
+  .header {
+    padding: 40px;
+  }
+  .header__title {
+    font-size: 1.5rem;
+  }
+  .header__subtitle {
+    margin: 24px 0 11px;
+    font-size: 1.125rem;
+  }
+  .header__text {
+    font-size: 1rem;
+  }
+}
+.subscription {
+  padding: 24px;
+  background: hsl(179, 62%, 43%);
+}
+.subscription__title {
+  margin-bottom: 18px;
+  color: hsl(0, 0%, 100%);
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+.subscription__info {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  color: hsl(0, 0%, 100%);
+}
+.subscription__price {
+  font-size: 2rem;
+  opacity: 1;
+}
+.subscription__period {
+  line-height: 26px;
+  font-weight: 400;
+  opacity: 0.5;
+}
+.subscription__description {
+  margin: 4px 0 26px;
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
+}
+.subscription__signup {
+  height: 48px;
+  width: 263px;
+  border: none;
+  text-align: center;
+  font-family: "Karla", serif;
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  font-weight: 700;
+  background: hsl(71, 73%, 54%);
+  border-radius: 5px;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.subscription__signup:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+  box-shadow: 5px 10px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.about {
+  position: relative;
+  z-index: 1;
+  padding: 24px;
+  background: hsl(179, 62%, 43%);
+}
+.about::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: hsl(0, 0%, 100%);
+  opacity: 0.15;
+}
+.about__title {
+  position: relative;
+  z-index: 3;
+  display: inline-block;
+  margin-bottom: 18px;
+  color: hsl(0, 0%, 100%);
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+.about__list {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  list-style: none;
+  color: hsl(0, 0%, 100%);
+}
+.about__item {
+  opacity: 0.75;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+@media (min-width: 992px) {
+  .content {
+    display: flex;
+  }
+  .content .subscription {
+    flex: 1;
+    padding: 40px;
+  }
+  .content .subscription__info {
+    gap: 11px;
+  }
+  .content .subscription__signup {
+    width: 237px;
+  }
+  .content .about {
+    flex: 1;
+    padding: 40px;
+  }
+}
+.container {
+  background: hsl(204, 43%, 93%);
+  font-family: "Karla", serif;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 722px;
+  width: 311px;
+  margin: 72px auto;
+  background: hsl(0, 0%, 100%);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+@media (min-width: 992px) {
+  .card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 475px;
+    width: 635px;
+    margin: 0;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,42 @@
+.header {
+  padding: $space-24 $space-24 $space-32;
+
+  &__title {
+    @include text-style($cyan, $font-size-20, $font-weight-bold);
+  }
+
+  &__subtitle {
+    margin: $space-24 0 $space-16;
+    color: $bright-yellow;
+    font-size: $font-size-16;
+    @include text-style($bright-yellow, $font-size-16);
+  }
+
+  &__text {
+    @include text-style(
+      $grayish-blue,
+      $font-size-14,
+      $font-weight-medium,
+      $line-hegiht-26
+    );
+  }
+}
+
+@media (min-width: $breakpoint-lg) {
+  .header {
+    padding: $space-40;
+
+    &__title {
+      font-size: $font-size-24;
+    }
+
+    &__subtitle {
+      margin: $space-24 0 $space-11;
+      font-size: $font-size-18;
+    }
+
+    &__text {
+      font-size: $font-size-16;
+    }
+  }
+}

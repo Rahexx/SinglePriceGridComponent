@@ -1,0 +1,123 @@
+.subscription {
+  padding: $space-24;
+  background: $cyan;
+
+  &__title {
+    margin-bottom: $space-18;
+    @include text-style($white, $font-size-18, $font-weight-bold);
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: $space-11;
+    color: $white;
+  }
+
+  &__price {
+    font-size: $font-size-32;
+    opacity: 1;
+  }
+
+  &__period {
+    line-height: $line-hegiht-26;
+    font-weight: $font-weight-medium;
+    opacity: 0.5;
+  }
+
+  &__description {
+    margin: $space-4 0 $space-26;
+    @include text-style(
+      $white,
+      $font-size-16,
+      $font-weight-medium,
+      $line-hegiht-26
+    );
+  }
+
+  &__signup {
+    height: 48px;
+    width: 263px;
+    border: none;
+    text-align: center;
+    font-family: $font-primary;
+    @include text-style($white, $font-size-16, $font-weight-bold);
+    background: $bright-yellow;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      transform: translateY(-5px);
+      box-shadow: 5px 10px 10px 0 rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+.about {
+  @include changePositionZ();
+  padding: $space-24;
+  background: $cyan;
+
+  &::before {
+    content: '';
+    display: block;
+    @include changePositionZ(absolute, 2);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: $white;
+    opacity: 0.15;
+  }
+
+  &__title {
+    @include changePositionZ(relative, 3);
+    display: inline-block;
+    margin-bottom: $space-18;
+    color: $white;
+    font-size: $font-size-18;
+    font-weight: $font-weight-bold;
+  }
+
+  &__list {
+    @include changePositionZ(relative, 3);
+    display: flex;
+    flex-direction: column;
+    gap: $space-4;
+    list-style: none;
+    color: $white;
+  }
+
+  &__item {
+    opacity: 0.75;
+    font-size: $font-size-14;
+    font-weight: $font-weight-medium;
+  }
+}
+
+@media (min-width: $breakpoint-lg) {
+  .content {
+    display: flex;
+
+    .subscription {
+      flex: 1;
+      padding: $space-40;
+
+      &__info {
+        gap: $space-11;
+      }
+
+      &__signup {
+        width: 237px;
+      }
+    }
+
+    .about {
+      flex: 1;
+      padding: $space-40;
+    }
+  }
+}
