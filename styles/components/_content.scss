@@ -1,0 +1,95 @@
+.subscription {
+  padding: $space-24;
+  background: $cyan;
+
+  &__title {
+    margin-bottom: $space-18;
+    color: $white;
+    font-size: $font-size-18;
+    font-weight: $font-weight-bold;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    color: $white;
+  }
+
+  &__price {
+    font-size: $font-size-32;
+    opacity: 1;
+  }
+
+  &__period {
+    line-height: $line-hegiht-26;
+    font-weight: $font-weight-medium;
+    opacity: 0.5;
+  }
+
+  &__description {
+    margin: $space-4 0 $space-26;
+    color: $white;
+    font-weight: $font-weight-medium;
+    line-height: $line-hegiht-26;
+  }
+
+  &__signup {
+    height: 48px;
+    width: 263px;
+    border: none;
+    text-align: center;
+    color: $white;
+    font-family: $font-primary;
+    font-weight: $font-weight-bold;
+    background: $bright-yellow;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+.about {
+  position: relative;
+  padding: $space-24;
+  background: $cyan;
+  z-index: 1;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background: $white;
+    opacity: 0.15;
+  }
+
+  &__title {
+    position: relative;
+    display: inline-block;
+    margin-bottom: $space-18;
+    z-index: 3;
+    color: $white;
+    font-size: $font-size-18;
+    font-weight: $font-weight-bold;
+  }
+
+  &__list {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    gap: $space-4;
+    list-style: none;
+    color: $white;
+  }
+
+  &__item {
+    opacity: 0.75;
+    font-size: $font-size-14;
+    font-weight: $font-weight-medium;
+  }
+}

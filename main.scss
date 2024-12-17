@@ -1,6 +1,7 @@
 @import 'styles/base/reset';
 @import 'styles/utilities/variables';
 @import 'styles/components/header';
+@import 'styles/components/content';
 
 .container {
   background: $light-gray;
@@ -15,4 +16,5 @@
   margin: $space-72 auto;
   background: $white;
   border-radius: 5px;
+  overflow: hidden;
 }
