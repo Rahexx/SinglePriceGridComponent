@@ -12,7 +12,6 @@
 .card {
   display: flex;
   flex-direction: column;
-  height: 722px;
   width: 311px;
   margin: $space-72 auto;
   background: $white;
@@ -25,7 +24,6 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    height: 475px;
     width: 635px;
     margin: 0;
     transform: translate(-50%, -50%);
